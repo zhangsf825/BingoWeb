@@ -1,0 +1,245 @@
+
+
+header{
+	width: 1180px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	display: flex;
+}
+
+.header-logo{
+	height: 100%;
+	width: 180px;
+	display: flex;
+	align-items: center;
+}
+.header-logo img{
+	width: 35px;
+	height: 35px;	
+}
+
+.header-logo span{
+	margin-left: 5px;
+	color: #3c464f;
+	font-size: 16px;
+}
+
+.header-center{
+	display: flex;
+	
+}
+.header-center ul{
+	display: flex;
+	align-items: center;
+}
+.header-center ul li{
+	font-size: 18px;
+	margin-right: 40px;
+	color: #3c464f;
+}
+
+.header-center ul li.header-center-cur{
+	color: #3c7cfc;
+	font-weight: bolder;
+}
+
+
+
+.main{	
+	background-color: #F6F7FA;
+}
+
+
+/* 导航 */
+nav{
+	width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+nav li{
+	height: 21px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+nav li p{
+	font-size: 16px;
+	color: #8a9095;
+
+}
+nav li p:hover{
+	cursor: pointer;
+}
+
+nav li p.nav-cur{
+	color: #3c7cfc;
+	font-weight: bolder;
+}
+
+.exam{
+	display: flex;
+	width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	padding-bottom: 80px;
+	
+}
+
+.exam-left{
+	width: 775px;
+	
+}
+
+.exam-left-top{
+	height: 148px;
+	background-color: #FFFFFF;
+	padding: 16px 16px 0;
+	border-radius: 6px;
+	overflow: hidden;	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 18px;
+}
+
+.exam-exercice{
+	width: 237px;
+	height: 116px;
+	border-radius: 8px;
+	/* background-color: #3c7cfc; */
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+.exercice1{
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/card1.jpg");
+}
+.exercice2{
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/card2.jpg");
+}
+.exercice3{
+	display: inline-block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("../images/card3.jpg");
+}
+
+/* 左边下半部分 */
+.exam-left-bottom{
+	width: 775px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+	min-height: 400px;
+}
+
+.exam-left-bottom-up{
+	height: 86px;
+	display: flex;
+	justify-content: space-between;
+}
+.exam-left-bottom-up .img{
+	width: 200px;
+	background: url("../images/zhuanxiang.png") 50% no-repeat;
+	background-size: cover;
+}
+.exam-left-bottom-up a{
+	margin-right: 18px;
+	line-height: 86px;
+	color: #9ea5bb;
+	
+}
+
+.exam-left-bottom-bottom{
+	
+	
+}
+.exam-left-bottom-bottom ul{
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+
+.exam-left-bottom-bottom ul div.content{
+	height: 55px;
+	border-bottom: 1px solid #f2f2f5;
+	display: flex;
+	align-items: center;
+}
+.exam-left-bottom-bottom ul div.content{
+	height: 55px;
+	border-bottom: 1px solid #f2f2f5;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.exam-left-bottom-bottom ul div.content div{
+	display: flex;
+	align-items: center;
+	
+}
+.exam-left-bottom-bottom ul .icon-direction{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 14px;
+	background: url("../images/icon-direction.png") 50% no-repeat;
+	background-size: contain;
+	margin-right: 10px;
+}
+.exam-left-bottom-bottom ul .content span{
+	margin-left: 20px;
+	cursor: pointer;
+	color: #636e92;
+	font-size: 14px;
+}
+
+/* 右边 */
+.exam-right{
+	flex-grow: 1;
+	margin-left: 16px;
+	background-color: #FFFFFF;
+	border-radius: 6px;
+}
+
+.exam-right-history{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 16px;
+	height: 58px;
+}
+
+.exam-right-history p{
+	color: #3c464f;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.exam-right-history a{
+	color: #9ea5bb;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.exam-right .divider{
+	width: 100%;
+	height: 1px;
+	background-color: #f2f2f5;
+}
+
+footer{
+	height: 300px;
+	background-color: #222222;
+}

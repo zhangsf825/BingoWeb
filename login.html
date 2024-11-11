@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			form {
+				width: 400px;
+				height: 420px;
+				margin: 0 auto;
+				margin-top: 100px;
+				box-shadow: 0 0 50px #cfdff5;
+				background: #fff;
+				border-radius: 8px;
+				padding: 25px;
+			}
+
+			.login-title {
+				margin: 25px 30px 40px 0;
+				color: #548ed0;
+				font-weight: 500;
+				font-size: 20px;
+			}
+
+			.form-item {
+				margin-bottom: 22px;
+			}
+
+			.form-item-input {
+				height: 36px;
+				line-height: 36px;
+				padding-left: 30px;
+				border: 1px solid #dcdfe6;
+				color: #606266;
+				width: 100%;
+				transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+				padding: 0 15px;
+				border-radius: 4px;
+			}
+
+			::-webkit-input-placeholder {
+				/* Chrome/Opera/Safari */
+				color: #dcdfe6;
+			}
+
+			::-moz-placeholder {
+				/* Firefox 19+ */
+				color: #dcdfe6;
+			}
+
+			:-ms-input-placeholder {
+				/* IE 10+ */
+				color: #dcdfe6;
+			}
+
+
+			.input-error {
+				color: #ff4949;
+				font-size: 12px;
+				padding-top: 4px;
+				display: none;
+			}
+
+			button {
+				width: 100%;
+				height: 42px;
+				color: #fff;
+				font-size: 15px;
+				margin-bottom: 30px;
+				background-image: linear-gradient(90deg, #1b70d0, #5490f6);
+				border: 1px solid #dcdfe6;
+				transition: 0.1s;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+			
+
+		</style>
+
+	</head>
+	<body>
+		<div class="main">
+			<form>
+				<div>
+					<p class="login-title">XX学校题库系统</p>
+					<div class="form-item">
+						<div>
+							<input 
+							id="username"
+							class="form-item-input" type="text" autocomplete="off" maxlength="11"
+								placeholder="请输入手机号">
+						</div>
+						<div class="input-error"> 请输入您的手机号码 </div>
+					</div>
+					<div class="form-item">
+						<div>
+							<input 
+							id="password"
+							class="form-item-input" type="password" autocomplete="off" placeholder="请输入密码">
+						</div>
+						<div class="input-error"> 请输入您的密码 </div>
+					</div>
+					<div class="form-item">
+						<div  style="width: 63%;">
+							<input class="form-item-input" type="text" autocomplete="off" placeholder="验证码">
+						</div>
+						<div class="login-code"><img src="" class="login-code-img"></div>
+					</div>
+					<div style="margin: 0px 0px 50px;"></div>
+					<div style="width: 100%;">
+						<div>
+							<button type="button"  onClick="login()">登录</button>
+							<!-- <div style="float: right;"><a href="/register" class="link-type">立即注册</a></div> -->
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	
+	
+	<script type="text/javascript">
+		function login(){
+			
+			let username = document.getElementById("username").value;
+			let pwd = document.getElementById("password").value
+			// alert(`username: ${username}, password: ${pwd}`);
+			
+			window.location.href="index.html";
+		}
+	</script>
+	
+	</body>
+</html>
